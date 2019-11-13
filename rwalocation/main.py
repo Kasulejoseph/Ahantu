@@ -9,25 +9,25 @@ import os
 import requests
 import operator
 
-class Location: 
+class Province: 
     def __init__(self):
         self.districts = dict()
         self.districtsArray = []
 
 
     def main(self):
-        dist_url = Location.get_data()
+        dist_url = Province().get_data()
 
-        Location.read_file(dist_url.path)
-        Location().district(dist_url.path)
+        Province().read_file(dist_url.path)
+        Province().district(dist_url.path)
 
 
-    def get_data():
+    def get_data(self):
         parser = argparse.ArgumentParser(description="Parse link ro the districts")
         parser.add_argument('--path', type=str, default="https://raw.githubusercontent.com/DevRW/rwanda-location/develop/src/db/locations.json", help="parse json format")
         return parser.parse_args()
 
-    def read_file(get_data):
+    def read_file(self, get_data):
         response = requests.get(get_data)
         sorted_x = sorted(response.json(), key=operator.itemgetter("district_name"), reverse=False)
         print(sorted_x[0])
@@ -45,4 +45,4 @@ class Location:
         return self.districtsArray       
 
 if __name__ == "__main__":
-    Location().main()
+    Province().main()
