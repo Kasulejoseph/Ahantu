@@ -24,7 +24,7 @@ with io.open(os.path.join(CURDIR, "README.md"), "r", encoding="utf-8") as f:
 
 
 def get_version():
-    main_file = os.path.join(CURDIR, "ug_dst", "main.py")
+    main_file = os.path.join(CURDIR, "rwalocation", "main.py")
     _version_re = re.compile(r"__version__\s+=\s+(?P<version>.*)")
     with open(main_file, "r", encoding="utf8") as f:
         match = _version_re.search(f.read())
@@ -33,19 +33,19 @@ def get_version():
 
 
 setup(
-    name="ug_dst",
+    name="rwalocation",
     version=get_version(),
     author="kasule joseph",
     author_email="kasule06joseph@gmail.com",
     description="",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/Kasulejoseph/ug_dst.git",
+    url="https://github.com/Kasulejoseph/Ahantu.git",
     packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
     include_package_data=True,
     keywords=[],
     scripts=[],
-    entry_points={"console_scripts": ["ug_dst=ug_dst.main:main"]},
+    entry_points={"console_scripts": ["rwalocation=rwalocation:main"]},
     zip_safe=False,
     install_requires=DEPENDENCIES,
     test_suite="tests.test_project",
