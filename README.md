@@ -1,8 +1,9 @@
 # ug-dst
-package for listing countries details(districts, sub county etc) 
+package for listing locations in Rwanda(districts, sub county etc) 
 
 ```
->>> from ug_dst.main import main
->>> main()
+>>> from rwalocation import location
+>>> location()
+
 This returns the first item in the array of districts
 ```
