@@ -1,4 +1,5 @@
 # Rwalocation
+[![Coverage Status](https://coveralls.io/repos/github/Kasulejoseph/Ahantu/badge.svg?branch=tests)](https://coveralls.io/github/Kasulejoseph/Ahantu?branch=tests)
 > A Python library for listing locations in Rwanda 
 
 ```
