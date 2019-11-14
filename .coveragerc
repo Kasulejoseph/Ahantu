@@ -1,0 +1,2 @@
+[run]
+omit = rwalocation/*__init__.py*
