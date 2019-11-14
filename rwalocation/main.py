@@ -12,7 +12,7 @@ class Province:
         self.districtsArray = []
         self.data_url = 'https://raw.githubusercontent.com/DevRW/rwanda-location/develop/src/db/locations.json'
 
-    def main():
+    def main(self):
         Province().province()
         Province().district()
     
@@ -21,7 +21,7 @@ class Province:
         sorted_x = sorted(response.json(), key=operator.itemgetter("district_name"), reverse=False)
         return sorted_x
 
-    def province():
+    def province(self):
         return Province().sort_by_district()
 
     def district(self):
