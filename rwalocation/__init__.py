@@ -3,7 +3,7 @@ from .main import Province
 app = Province()
 
 def district():
-    app.district()
+    print(app.district())
 
-def location():
-    app.province()
+def province():
+    print(app.province())
