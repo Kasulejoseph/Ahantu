@@ -20,8 +20,6 @@ class UnitTests(unittest.TestCase):
 
     def test_list_province_return_list(self):
         self.assertIsInstance(self.location.province(), list)
-                
+
     def test_sort_by_district_return_an_array(self):
         self.assertIsInstance(self.location.sort_by_district(), list)
-
-        
