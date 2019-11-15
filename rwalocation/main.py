@@ -11,22 +11,23 @@ class Province:
         self.districts = dict()
         self.districtsArray = []
         self.data_url = 'https://raw.githubusercontent.com/DevRW/rwanda-location/develop/src/db/locations.json'
+        self.sorted_data = self.sort_by_district(self.data_url)
 
     def main(self):
-        Province().province()
-        Province().district()
+        self.province()
+        self.district()
     
-    def sort_by_district(self):
-        response = requests.get(self.data_url)
+    @staticmethod
+    def sort_by_district(data_url):
+        response = requests.get(data_url)
         sorted_x = sorted(response.json(), key=operator.itemgetter("district_name"), reverse=False)
         return sorted_x
 
     def province(self):
-        return Province().sort_by_district()
+        return self.sorted_data
 
     def district(self):
-        sorted_data = Province().sort_by_district()
-        for value in sorted_data:
+        for value in self.sorted_data:
             if(value['district_name'] not in self.districts.values()):
                 district_name = self.districts['district_name'] = value['district_name']
                 district_code = self.districts['district_code'] = value['district_code']
