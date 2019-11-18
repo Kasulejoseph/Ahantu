@@ -1,4 +1,4 @@
-# Places In Rwanda 
+# Rwanda Locations 
 [![Build Status](https://travis-ci.com/Kasulejoseph/Ahantu.svg?branch=master)](https://travis-ci.com/Kasulejoseph/Ahantu)
 [![Coverage Status](https://coveralls.io/repos/github/Kasulejoseph/Ahantu/badge.svg?branch=tests)](https://coveralls.io/github/Kasulejoseph/Ahantu?branch=tests)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e6d206d92344ce881cc29241dea1929)](https://www.codacy.com/manual/Kasulejoseph/Ahantu?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kasulejoseph/Ahantu&amp;utm_campaign=Badge_Grade)
