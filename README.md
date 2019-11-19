@@ -54,8 +54,8 @@ results
 
 ## Contributing 🙏
 Pull requests and potential features are welcome.
-1.Make all changes to your forked branch
-2.Submit a Pull Request.
+1. Make all changes to your forked branch
+2. Submit a Pull Request.
 
 ## Submit Issues 🐛
 Facing any Issues or weird behavior(bug)? Feel free to open a [new issue](https://github.com/Kasulejoseph/Ahantu/issues/new).
