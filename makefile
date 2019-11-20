@@ -7,6 +7,7 @@ build: clean
 publish: build
 	python -m twine check dist/*
 	python -m twine upload dist/*
+	python -m twine upload --skip-existing dist/*
 
 clean:
 	rm -r build dist *.egg-info || true
