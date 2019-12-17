@@ -12,10 +12,10 @@ pip install rwalocation
 ## Features
 1. All locations
 2. Provinces
-3. Places in specific province
+3. Places in a province
 4. Districts
-5. Places in a specific district
-6. places with contain specified name.
+5. Places in a district
+6. Places that contain the specified name.
 ## USAGE
 Import modules
 * >from rwalocation import location, province, district
