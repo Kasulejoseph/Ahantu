@@ -15,11 +15,11 @@ pip install rwalocation
 >>> import rwalocation 
 >>> rwalocation.province()
 Results ... all provinces
->>> [{'province_name': 'EAST', 'province_code': 5}, {'province_name': 'NORTH', 'province_code': 4}, {'province_name': 'KIGALI', 'province_code': 1}, {'province_name': 'SOUTH', 'province_code': 2}, {'province_name': 'WEST', 'province_code': 3}]
+>>> [{'province_name': 'EAST', 'province_code': 5}, {'province_name': 'NORTH', 'province_code': 4}, ...]
 
 2. >>> rwalocation.province('Kigali')
 Results ... all Locations in "Kigali" province
->>> [{'id': '68028287-fe59-42ae-978e-5d24a37ada38', 'country_code': 'RWA', 'country_name': 'RWANDA', 'province_code': 1, 'province_name': 'KIGALI', 'district_code': 103, 'district_name': 'Kicukiro', 'sector_code': '010310', 'sector_name': 'Nyarugunga', 'cell_code': 1031001, 'cell_name': 'Kamashashi', 'village_code': 103100109, 'village_name': 'Uruhongore'}, ...]
+>>> [{'id': '68028287-fe59-42ae-978e-5d24a37ada38', 'country_code': 'RWA', 'country_name': 'RWANDA', ...]
 
 3.
 >> from rwalocation import district
@@ -31,18 +31,18 @@ results ... 30 districts
 >> from rwalocation import district
 >>> district('Kicukiro')
 results ... all locations in "Kicukiro" district
->>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', 'province_code': 5, 'province_name': 'KIGALI', 'district_code': 501, 'district_name': 'Kicukiro', 'sector_code': '050114', 'sector_name': 'Rubona', 'cell_code': 5011406, 'cell_name': 'Nawe', 'village_code': 501140603, 'village_name': 'Rudashya'}, ...]
+>>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ...]
 
 5.
 >>> from rwalocation import location
 >>> location()
 results ... all locations in Rwanda
->>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', 'province_code': 5, 'province_name': 'EAST', 'district_code': 501, 'district_name': 'Rwamagana', 'sector_code': '050114', 'sector_name': 'Rubona', 'cell_code': 5011406, 'cell_name': 'Nawe', 'village_code': 501140603, 'village_name': 'Rudashya'}, ... ]
+>>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ... ]
 
 6.
 >>> location('Rubashya')
 results ... all locations which contain name "Rubashya"
->>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', 'province_code': 5, 'province_name': 'EAST', 'district_code': 501, 'district_name': 'Rwamagana', 'sector_code': '050114', 'sector_name': 'Rubona', 'cell_code': 5011406, 'cell_name': 'Nawe', 'village_code': 501140603, 'village_name': 'Rudashya'}, ... ]
+>>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA',... ]
 ```
 
 ## DATA Spec
