@@ -17,14 +17,15 @@ pip install rwalocation
 5. Places in a specific district
 6. places with contain specified name.
 ## USAGE
+Import modules
+* >from rwalocation import location, province, district
+* >import rwalocation
 ```
 1.
->>> from rwalocation import location
 >>> location()
 >>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ... ]
 
 2.
->>> import rwalocation 
 >>> rwalocation.province()
 >>> [{'province_name': 'EAST', 'province_code': 5}, {'province_name': 'NORTH', 'province_code': 4}, ...]
 
@@ -33,12 +34,10 @@ pip install rwalocation
 >>> [{'id': '68028287-fe59-42ae-978e-5d24a37ada38', 'country_code': 'RWA', 'country_name': 'RWANDA', ...]
 
 4.
->> from rwalocation import district
 >>> district()
 >>> [{'district_name': 'Bugesera', 'district_code': 507, 'province_name': 'EAST'}, ...]
 
 5.
->> from rwalocation import district
 >>> district('Kicukiro')
 >>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ...]
 
