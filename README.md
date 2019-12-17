@@ -9,39 +9,41 @@
 ```
 pip install rwalocation
 ```
+## Features
+1. All locations
+2. Provinces
+3. Places in specific province
+4. Districts
+5. Places in a specific district
+6. places with contain specified name.
 ## USAGE
 ```
 1.
+>>> from rwalocation import location
+>>> location()
+>>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ... ]
+
+2.
 >>> import rwalocation 
 >>> rwalocation.province()
-Results ... all provinces
 >>> [{'province_name': 'EAST', 'province_code': 5}, {'province_name': 'NORTH', 'province_code': 4}, ...]
 
-2. >>> rwalocation.province('Kigali')
-Results ... all Locations in "Kigali" province
+3. 
+>>> rwalocation.province('Kigali')
 >>> [{'id': '68028287-fe59-42ae-978e-5d24a37ada38', 'country_code': 'RWA', 'country_name': 'RWANDA', ...]
-
-3.
->> from rwalocation import district
->>> district()
-results ... 30 districts
->>> [{'district_name': 'Bugesera', 'district_code': 507, 'province_name': 'EAST'}, ...]
 
 4.
 >> from rwalocation import district
->>> district('Kicukiro')
-results ... all locations in "Kicukiro" district
->>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ...]
+>>> district()
+>>> [{'district_name': 'Bugesera', 'district_code': 507, 'province_name': 'EAST'}, ...]
 
 5.
->>> from rwalocation import location
->>> location()
-results ... all locations in Rwanda
->>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ... ]
+>> from rwalocation import district
+>>> district('Kicukiro')
+>>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA', ...]
 
 6.
->>> location('Rubashya')
-results ... all locations which contain name "Rubashya"
+>>> location('Rubashya') :> All locations which contain name "Rubashya"
 >>> [{'id': '84b17f22-c14e-4931-98b2-bdf0cfd90090', 'country_code': 'RWA', 'country_name': 'RWANDA',... ]
 ```
 
